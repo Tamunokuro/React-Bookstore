@@ -14,8 +14,6 @@ const Navbar = () => (
       <Routes>
         <Route path="/" element={<Book />} />
         <Route path="/categories" element={<Categories />} />
-        <Route />
-        <Route />
       </Routes>
     </div>
   </div>
