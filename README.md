@@ -117,7 +117,7 @@ You can deploy this project using:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [Tamunokuro](https://github.com/Tamunokuro)
 - Twitter: [tamuno____](https://twitter.com/tamuno____)
