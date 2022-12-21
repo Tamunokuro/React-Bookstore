@@ -1,34 +1,34 @@
 /* eslint-disable react/prop-types */
 
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { Form, Button, Container } from 'react-bootstrap';
+import { bookAdd } from '../redux/books/books';
 
-const InputBook = (props) => {
-  const [book, setBookInput] = useState({
+const InputBook = () => {
+  const dispatch = useDispatch();
+  const book = {
+    id: uuidv4(),
     title: '',
     author: '',
-  });
-
-  const { addBook } = props;
+    category: 'Drama',
+  };
+  const [details, setDetails] = useState(book);
 
   const onChange = (e) => {
-    setBookInput({
-      ...book,
-      [e.target.name]: e.target.value,
-    });
+    const inputText = e.target.name;
+    if (inputText === 'title') {
+      setDetails({ ...details, title: e.target.value });
+    } else {
+      setDetails({ ...details, author: e.target.value });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (book.title.trim() && book.author.trim()) {
-      addBook(book.title, book.author);
-      setBookInput({
-        title: '',
-        author: '',
-      });
-    } else {
-      alert('Please fill input fields');
-    }
+    dispatch(bookAdd(details));
+    setDetails(book);
   };
 
   return (
@@ -41,8 +41,8 @@ const InputBook = (props) => {
           type="text"
           className="input"
           placeholder="Book title"
-          value={book.title}
           name="title"
+          value={details.title}
           onChange={onChange}
         />
 
@@ -51,8 +51,8 @@ const InputBook = (props) => {
           type="text"
           className="input"
           placeholder="Author"
-          value={book.author}
           name="author"
+          value={details.author}
           onChange={onChange}
         />
 
