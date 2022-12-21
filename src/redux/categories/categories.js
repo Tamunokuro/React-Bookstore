@@ -1,24 +1,21 @@
 // action types
 const STATUS_CHECKED = 'STATUS_CHECKED';
 
-const initialState = {
-  categories: [],
-};
+const initialState = [];
 
 // action creators
-export const checkStatus = () => ({
+export const checkStatus = (status) => ({
   type: STATUS_CHECKED,
+  payload: status,
 });
 
 // reducers
 export default function categoryreducer(state = initialState, action) {
   switch (action.type) {
     case STATUS_CHECKED:
-      return {
-        type: STATUS_CHECKED,
-        payload: 'Under Construction',
-
-      };
+      return [
+        'Under Construction',
+      ];
     default:
       return state;
   }
