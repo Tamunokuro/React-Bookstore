@@ -2,6 +2,7 @@ import '../App.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import Categories from './Categories';
 import Book from './Book';
+// import BookList from './BookList';
 
 const Navbar = () => (
   <div className="header">

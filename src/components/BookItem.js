@@ -5,13 +5,13 @@ import { Button, Container } from 'react-bootstrap';
 
 const BookItem = ({ book, deleteBookProp }) => {
   const {
-    title, author, id,
+    title, author, category, id,
   } = book;
   return (
     <Container>
       <div className="singleBook">
         <div className="widgets">
-          <small>Action</small>
+          <small>{ category }</small>
           <h2>{ title }</h2>
           <small>{ author }</small>
         </div>
