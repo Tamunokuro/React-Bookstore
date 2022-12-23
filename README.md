@@ -73,14 +73,20 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+- Nodejs
+- Reactjs
+- Redux
+- Redux Thunk
 
 ### Setup
 
 Clone this repository to your desired folder:
+- Run `git clone git@github.com:Tamunokuro/React-Bookstore.git`
 
 ### Install
 
 Install this project with:
+- Run `npm install`
 
 ### Usage
 
