@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { Form, Button, Container } from 'react-bootstrap';
-import { bookAdd } from '../redux/books/books';
+import { postbookThunk } from '../redux/books/books';
 
 const InputBook = () => {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const InputBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(bookAdd(details));
+    dispatch(postbookThunk(details));
     setDetails(book);
   };
 
