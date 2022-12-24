@@ -2,14 +2,14 @@
 import { RiDonutChartFill } from 'react-icons/ri';
 
 import React from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
-const BookItem = ({ book, deleteBookProp }) => {
+const BookItem = ({ book, percentage, deleteBookProp }) => {
   const {
     title, author, category, id,
   } = book;
   return (
-    <Container>
+    <>
       <div className="singleBook">
         <div className="widgets">
           <small className="book-category">{ category }</small>
@@ -21,24 +21,43 @@ const BookItem = ({ book, deleteBookProp }) => {
             <small className="tools">Edit</small>
           </div>
         </div>
-        <div>
+        <div style={{ display: 'flex' }}>
           <RiDonutChartFill
             style={{
               color: '#87ceeb',
-              borderRight: '1px solid #dcdcdc',
-              padding: '0 1rem',
+              marginRight: '0 5rem',
             }}
             size={120}
           />
+          <div>
+            <small style={{
+              display: 'flex',
+              fontSize: '25px',
+              alignItems: 'center',
+            }}
+            >
+              {' '}
+              {percentage}
+              %
+            </small>
+            <span style={{ color: '#857979' }}>Completed</span>
+          </div>
         </div>
-        <div className="book">
+        <div style={{ borderLeft: '1px solid #dcdcdc', paddingLeft: '5rem' }} className="book">
           <small>Current Chapter</small>
           <small>Chapter 17</small>
-          <Button variant="primary" onClick={() => deleteBookProp(id)}>Delete Book</Button>
+          <Button
+            style={{
+              backgroundColor: '#87ceeb',
+            }}
+            onClick={() => deleteBookProp(id)}
+          >
+            Delete Book
+          </Button>
         </div>
       </div>
       <hr />
-    </Container>
+    </>
   );
 };
 

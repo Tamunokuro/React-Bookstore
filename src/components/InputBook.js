@@ -33,9 +33,9 @@ const InputBook = () => {
 
   return (
     <Container>
-      <h5>Add New Book</h5>
+      <h5 style={{ marginLeft: '2rem' }}>Add New Book</h5>
 
-      <Form className="mb-3 inputbook" onSubmit={handleSubmit}>
+      <Form className="mb-3 inputbook" style={{ marginLeft: '1rem' }} onSubmit={handleSubmit}>
         <Form.Label className="label">Book</Form.Label>
         <Form.Control
           type="text"
@@ -61,11 +61,13 @@ const InputBook = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
+            float: 'right',
             height: '3rem',
+            backgroundColor: '#87ceeb',
           }}
           type="submit"
         >
-          Add Author
+          Add Book
         </Button>
       </Form>
     </Container>

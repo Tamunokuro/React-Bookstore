@@ -37,6 +37,7 @@ export const loadbookThunk = createAsyncThunk(LOAD, async (_, { dispatch }) => {
   const books = Object.keys(response.data).map((key) => ({
     item_id: key,
     ...response.data[key][0],
+    percentage: Math.floor(Math.random() * 100),
   }));
   dispatch(({ type: LOAD, payload: books }));
 });
