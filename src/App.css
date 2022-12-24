@@ -106,8 +106,13 @@ li {
   display: none;
 }
 
+.input-book {
+  width: 44rem;
+  margin: 1rem;
+}
+
 .input {
-  width: 27rem;
+  width: 17rem;
   margin: 1rem;
 }
 

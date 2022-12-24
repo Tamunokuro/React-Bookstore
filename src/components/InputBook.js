@@ -39,7 +39,7 @@ const InputBook = () => {
         <Form.Label className="label">Book</Form.Label>
         <Form.Control
           type="text"
-          className="input"
+          className="input-book"
           placeholder="Book title"
           name="title"
           value={details.title}
@@ -57,11 +57,9 @@ const InputBook = () => {
         />
 
         <Button
+          float-right
           variant="primary"
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            float: 'right',
             height: '3rem',
             backgroundColor: '#87ceeb',
           }}
