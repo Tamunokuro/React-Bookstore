@@ -16,8 +16,11 @@
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
+   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+    - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -66,11 +69,16 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> Bookstore app is a simple react application for storing books you are currentingly reading 
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
+- Nodejs
+- NPM
+- React
+- Redux
+- Redux Thunk
 
 In order to run this project you need:
 - Nodejs
@@ -79,11 +87,13 @@ In order to run this project you need:
 - Redux Thunk
 
 ### Setup
+- Run `git clone git@github.com:Tamunokuro/React-Bookstore.git`
 
 Clone this repository to your desired folder:
 - Run `git clone git@github.com:Tamunokuro/React-Bookstore.git`
 
 ### Install
+- Run `npm install` 
 
 Install this project with:
 - Run `npm install`
@@ -116,6 +126,14 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- **Progress Tracker**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -137,6 +155,30 @@ Feel free to check the [issues page](../../issues/).
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
 
 <!-- LICENSE -->
 

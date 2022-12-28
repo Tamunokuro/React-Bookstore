@@ -11,7 +11,7 @@ const Categories = () => {
     dispatch(checkStatus());
   };
   return (
-    <Container>
+    <Container style={{ marginTop: '2rem' }}>
       <Button className="checkstatus" variant="primary" onClick={statusCheck}>Check Status</Button>
       <h2>{status}</h2>
     </Container>
