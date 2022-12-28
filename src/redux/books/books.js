@@ -48,6 +48,7 @@ export const postbookThunk = createAsyncThunk(BOOK_ADDED, async (book, { dispatc
     title: book.title,
     author: book.author,
     category: book.category,
+    percentage: Math.floor(Math.random() * 100),
   });
   dispatch(({ type: BOOK_ADDED, payload: book }));
 });
