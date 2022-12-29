@@ -32,7 +32,6 @@ const BookList = () => {
                 <BookItem
                   id={book.item_id}
                   book={book}
-                  percentage={book.percentage}
                   deleteBookProp={() => deleteBook(book.item_id)}
                 />
               </li>

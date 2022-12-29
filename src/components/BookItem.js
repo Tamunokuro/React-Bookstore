@@ -4,9 +4,9 @@ import { RiDonutChartFill } from 'react-icons/ri';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-const BookItem = ({ book, percentage, deleteBookProp }) => {
+const BookItem = ({ book, deleteBookProp }) => {
   const {
-    title, author, category, id,
+    title, author, category, id, percentage,
   } = book;
   return (
     <>
@@ -36,7 +36,6 @@ const BookItem = ({ book, percentage, deleteBookProp }) => {
               alignItems: 'center',
             }}
             >
-              {' '}
               {percentage}
               %
             </small>
